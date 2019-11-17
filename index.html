@@ -6,29 +6,188 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/app.css">
-  <title>Flex</title>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="font/css/font-awesome.min.css">
+  <title>Travel-More</title>
 </head>
 <body>
-  <header class="ba-header">
+  <div class="ba-banner">
+    <!-- <div class="container"> -->
+      <div class="ba-hero">
+          <div class="ba-hero-info">
+            <h1 class="ba-hero-info__title">Bhromaon</h1>
+            <span class="ba-hero-info__text">Safe Travel Anywhere</span>
+          </div>
+          <form class="ba-search-form">
+            <input type="email" required placeholder="Search Your Travel Destination" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              class="ba-input">
+            <button class="ba-button">search  <img class="ba-search" src="../images/search.svg" alt="search"></button>
+          </form>
+          <a href="#choose" class="ba-scroll">Scroll Down</a>
+      </div>
+    <!-- </div> -->
+    <header class="ba-header">
+        <div class="logo">
+          <a href="#" class="ba-logo__item">Bhromaon</a>
+        </div>
+        <nav class="ba-nav">
+          <ul class="ba-menu">
+            <li class="ba-menu__item">
+              <a href="#" class="ba-menu__link">Who We Are</a>
+            </li>
+            <li class="ba-menu__item">
+              <a href="#" class="ba-menu__link">What We Do</a>
+            </li>
+            <li class="ba-menu__item">
+              <a href="#" class="ba-menu__link">Travel With Us</a>
+            </li>
+            <li class="ba-menu__item">
+              <a href="#" class="ba-menu__link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+  </div>
+  <!-- start ba info -->
+  <section class="ba-info"  id="choose">
     <div class="container">
-      <div class="row"></div>
-    </div>
-  </header>
-  <main>
-    <section class="ba-section">
-      <div class="container">
-        <div class="row">
-
+      <div class="ba-row">
+        <div class="ba-col-6">
+          <div class="ba-info-desc">
+            <h1 class="ba-info-desc__title">Why Choose Us</h1>
+            <p class="ba-info-desc__text">Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded
+            by desire, that they cannot foresee</p>
+            <p class="ba-info-desc__text ba-info-desc__text--bottom">Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.</p>
+            <a href="#" class="ba-info-desc__link">Explore Places</a>
+          </div>
+        </div>
+        <div class="ba-col-6">
+          <div class="ba-slide">
+            <div class="ba-slide__item">
+              <img src="../images/slide1.jpg" alt="home">
+            </div>
+            <div class="ba-slide__item">
+              <img class="ba-slide__img" src="../images/slide2.jpg" alt="ben">
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-  </main>
-  <footer class="ba-footer">
+    </div>
+  </section>
+  <!-- end ba-info -->
+  <!-- start ba place -->
+  <section class="ba-place">
     <div class="container">
-      <div class="row">
-        
+      <div class="ba-row">
+        <div class="ba-col-4">
+          <div class="ba-search">
+            <span class="ba-search__title">Search Places</span>
+          </div>
+        </div>
+        <div class="ba-col-4">
+          <div class="ba-arrow">
+            <span class="ba-arrow__title">Select Places</span>
+          </div>
+        </div>
+        <div class="ba-col-4">
+          <div class="ba-like">
+            <span class="ba-like__title">Book & Enjoy</span>
+          </div>
+        </div>
       </div>
     </div>
-  </footer>
+  </section>
+  <!-- end ba place -->
+  <!-- start ba-card-one -->
+  <section class="ba-card-one">
+    <div class="container">
+      <div class="ba-info-box">
+        <span class="ba-info-box__name">Spain</span>
+        <h2 class="ba-info-box__title">Grand Spain Madrid</h2>
+        <p class="ba-info-box__text">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account born and I account will give you a complete account of the system</p>
+        <a href="#" class="ba-info-box__link">Book Now</a>
+      </div>
+    </div>
+  </section>
+  <!-- end ba-card-one-->
+  <!-- start card-two -->
+<section class="ba-card-two">
+  <div class="container">
+    <div class="ba-card-wrapp">
+      <div class="ba-info-box">
+        <span class="ba-info-box__name">Spain</span>
+        <h2 class="ba-info-box__title">Grand Spain Madrid</h2>
+        <p class="ba-info-box__text">But I must explain to you how all this mistaken idea of account to denouncing pleasure
+          and praising pain was account born and I account will give you a complete account of the system</p>
+        <a href="#" class="ba-info-box__link">Book Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- end card-two -->
+  <!-- start description -->
+<section class="ba-description">
+  <div class="container">
+    <div class="ba-description-wrapp">
+      <h1 class="ba-description__title">What Our Tourist Say</h1>
+      <div class="ba-description-card">
+        <div class="ba-description-image">
+          <img src="../images/desc-img.jpg" alt="man">
+        </div>
+        <div class="ba-description-info">
+          <h2 class="ba-description-info__title">Sam Sumon</h2>
+          <blockquote class="ba-description-info__quote"> <sup><i class="fa fa-quote-left" aria-hidden="true"></i></sup>But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account born and I account will give you a complete account of the system was account born and I account will give you a nai the complete
+          account of the system</blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end description -->
+<!-- start footer -->
+<footer class="ba-footer">
+  <div class="ba-footer-wrapp">
+    <div class="ba-social">
+        <a href="#" class="ba-social__logo">Bhromaon</a>
+        <span class="ba-social__text">Safe Travel Anywhere</span>
+        <div class="ba-icon">
+          <ul class="ba-icon__menu">
+            <li class="ba-icon__item">
+              <a href="https://www.facebook.com/" class="ba-icon__link" target="_blank">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="ba-icon__item">
+              <a href="https://twitter.com/" class="ba-icon__link" target="_blank">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="ba-icon__item">
+              <a href="https://www.linkedin.com/" class="ba-icon__link" target="_blank">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="ba-icon__item">
+              <a href="https://www.youtube.com/" class="ba-icon__link" target="_blank">
+                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="ba-icon__item">
+              <a href="https://www.pinterest.com/" class="ba-icon__link" target="_blank">
+              <i class="fa fa-pinterest" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </div>
+</footer>
+<!-- end footer -->
+<!-- svg srpite -->
+  <div class="visabilitty-hidden">
+    <svg>
+      
+    </svg>
+  </div>
 </body>
 </html>
