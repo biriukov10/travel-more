@@ -1,0 +1,107 @@
+@mixin hoverBtn {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(112, 68, 255, 0.4);
+  top: 0;
+  left: -100%;
+  position: absolute;
+  transition: .3s;
+  z-index: 10;
+}
+@mixin text {
+  font-size: $fZidePrim;
+  line-height: $lineHeiPrim;
+  font-weight: 300;
+  margin-bottom: 43px;
+}
+@mixin link {
+  display: inline-block;
+  position: relative;
+  font-family: $fontAleo;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-size: $fZidePrim;
+  line-height: $lineHeiPrim;
+  background-color: $secondaryColor;
+  padding: 20px 63px;
+}
+@mixin title {
+  font-size: $fZideSec;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: $lineHeiPrim;
+  margin-bottom: 20px;
+}
+@mixin sectName {
+  display: inline-block;
+  font-size: $fZideSec;
+  letter-spacing: .75px;
+  font-weight: 300;
+  line-height: $lineHeiPrim;
+  margin-bottom: 20px;
+}
+@mixin box {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  max-width: 451px;
+  padding: 42px 32px 50px;
+  margin-left: 40px;
+}
+@mixin card {
+  padding: 217px 0 100px;
+  background: {
+    color: #333333;
+    image: url(../images/card-bg1.jpg);
+    size: $cov;
+  }
+}
+@mixin flex {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 100px;
+}
+@mixin placeWrapp {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+@mixin afterPlace {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-bottom: 15px;
+  transform: translateX(-50%);
+}
+@mixin btn {
+  width: 25%;
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  background-color: $primaryColor;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  font-size: $fZidePrim;
+  font-family: $fontAleo;
+  border: 1px solid #fff;
+  transition: .4s;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+}
+@mixin input {
+  width: 70%;
+  height: 60px;
+  padding: 20px;
+  border: 1px solid #fff;
+  border-right: none;
+  flex-grow: 1;
+  font-weight: 400;
+  line-height: 60px;
+  font-size: 0.875rem;
+  letter-spacing: 2px;
+}

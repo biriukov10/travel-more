@@ -248,12 +248,14 @@ img {
     .ba-info .ba-info-desc__link {
       display: inline-block;
       position: relative;
-      overflow: hidden;
       font-family: "Aleo", serif;
-      font-size: 1rem;
+      overflow: hidden;
       text-transform: uppercase;
-      padding: 20px 38px;
+      font-size: 1rem;
+      line-height: 1.5;
       background-color: #496bfe;
+      padding: 20px 63px;
+      padding: 20px 38px;
       margin-top: 45px; }
       .ba-info .ba-info-desc__link::before, .ba-info .ba-info-desc__link::after {
         content: '';
@@ -293,39 +295,40 @@ img {
     position: relative; }
     .ba-place .ba-search::after {
       position: absolute;
-      content: url(../images/search.png);
       bottom: 100%;
       left: 50%;
       margin-bottom: 15px;
-      transform: translateX(-50%); }
+      transform: translateX(-50%);
+      content: url(../images/search.png); }
   .ba-place .ba-arrow {
     display: flex;
     justify-content: center;
     position: relative; }
     .ba-place .ba-arrow::after {
       position: absolute;
-      content: url(../images/arrow.png);
       bottom: 100%;
       left: 50%;
       margin-bottom: 15px;
-      transform: translateX(-50%); }
+      transform: translateX(-50%);
+      content: url(../images/arrow.png); }
   .ba-place .ba-like {
-    position: relative;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    position: relative; }
     .ba-place .ba-like::after {
       position: absolute;
-      content: url(../images/like.png);
       bottom: 100%;
       left: 50%;
       margin-bottom: 15px;
-      transform: translateX(-50%); }
+      transform: translateX(-50%);
+      content: url(../images/like.png); }
 
 .ba-card-one {
   padding: 217px 0 100px;
   background-color: #333333;
   background-image: url(../images/card-bg1.jpg);
-  background-size: cover; }
+  background-size: cover;
+  background-image: url(../images/card-bg1.jpg); }
   .ba-card-one .ba-info-box {
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
@@ -383,9 +386,10 @@ img {
 
 .ba-card-two {
   padding: 217px 0 100px;
-  background-color: #333;
-  background-image: url(../images/card-bg2.jpg);
-  background-size: cover; }
+  background-color: #333333;
+  background-image: url(../images/card-bg1.jpg);
+  background-size: cover;
+  background-image: url(../images/card-bg2.jpg); }
   .ba-card-two .ba-card-wrapp {
     display: flex;
     justify-content: flex-end;
@@ -394,7 +398,8 @@ img {
       background-color: rgba(0, 0, 0, 0.7);
       width: 100%;
       max-width: 451px;
-      padding: 42px 32px 50px; }
+      padding: 42px 32px 50px;
+      margin-left: 40px; }
       .ba-card-two .ba-card-wrapp .ba-info-box__name {
         display: inline-block;
         font-size: 1.25rem;
@@ -414,10 +419,10 @@ img {
         font-weight: 300;
         margin-bottom: 43px; }
       .ba-card-two .ba-card-wrapp .ba-info-box__link {
-        position: relative;
-        overflow: hidden;
         display: inline-block;
+        position: relative;
         font-family: "Aleo", serif;
+        overflow: hidden;
         text-transform: uppercase;
         font-size: 1rem;
         line-height: 1.5;
@@ -469,9 +474,10 @@ img {
         font-size: 1.25rem;
         text-transform: uppercase;
         font-weight: 300;
+        line-height: 1.5;
+        margin-bottom: 20px;
         margin-bottom: 35px; }
       .ba-description .ba-description-card .ba-description-info__quote {
-        position: relative;
         font-size: 1rem;
         line-height: 1.5;
         font-weight: 300; }
@@ -510,4 +516,4 @@ img {
           .ba-footer .ba-footer-wrapp .ba-social .ba-icon .ba-icon__menu .fa {
             transition: .4s; }
             .ba-footer .ba-footer-wrapp .ba-social .ba-icon .ba-icon__menu .fa:hover {
-              color: blue; }
+              color: #496bfe; }

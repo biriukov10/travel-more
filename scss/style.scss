@@ -1,5 +1,6 @@
 @import 'layout.scss';
 @import 'variebles.scss';
+@import 'mixins.scss';
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +31,7 @@ img {
   background: {
     color: #393d3f;
     image: url(../images/Image.jpg);
-    size: cover;
+    size: $cov;
   } 
   .ba-hero {
     height: calc(100vh - 80px);
@@ -46,7 +47,7 @@ img {
       &__title {
         font-size: 3rem;
         text-transform: uppercase;
-        line-height: 1.8;
+        line-height: $lineHeiSec;
         margin-bottom: 0;
       }
       &__text {
@@ -63,16 +64,7 @@ img {
       margin-top: 47px;
       margin-bottom: 115px;
       .ba-input {
-        width: 70%;
-        height: 60px;
-        padding: 20px;
-        border: 1px solid #fff;
-        border-right: none;
-        flex-grow: 1;
-        font-weight: 400;
-        line-height: 60px;
-        font-size: 0.875rem;
-        letter-spacing: 2px;
+        @include input;
         &::placeholder {
           opacity: .7;
           font-size: .575;
@@ -82,27 +74,12 @@ img {
           transition: text-indent 0.3s ease;
         }
         &:focus::placeholder {
-            text-indent: 500px;
-          }
+          text-indent: 500px;
+        }
       }
       .ba-button {
-        width: 25%;
-        position: relative;
-        display: inline-block;
-        height: 60px;
-        line-height: 60px;
-        background-color: #5474fd;
-        color: #fff;
-        text-transform: uppercase;
-        text-align: center;
-        font-weight: 400;
-        font-size: 1rem;
-        font-family: $fontAleo;
-        border: 1px solid #fff;
-        transition: .4s;
-        cursor: pointer;
-        z-index: 1;
-        overflow: hidden;
+        @include btn;
+
         .ba-search {
           position: absolute;
           right: 10%;
@@ -116,16 +93,7 @@ img {
         }
         &::before,
         &::after {
-          content: '';
-          display: block;
-          width: 100%;
-          height: 100%;
-          background-color: rgba(112, 68, 255, 0.4);
-          top: 0;
-          left: -100%;
-          position: absolute;
-          transition: .3s;
-          z-index: 10;
+         @include hoverBtn;
         }
         &:hover::before {
           left: 0;
@@ -146,7 +114,7 @@ img {
       font-size: .875;
       font-weight: 300;
       letter-spacing: 2px;
-      line-height: 1.5;
+      line-height: $lineHeiPrim;
       &::after {
         position: absolute;
         content: url(../images/scroll.svg);
@@ -166,7 +134,7 @@ img {
     align-items: center;
     padding: 0 10vw;
     height: 80px;
-    background-color: #5474fd;
+    background-color: $primaryColor;
     .ba-logo {
       &__item {
         text-transform: uppercase;
@@ -197,7 +165,7 @@ img {
   background:  {
     color: #333333;
     image: url(../images/info.jpg);
-    size: cover;
+    size: $cov;
   }
   .ba-info-desc {
     padding-top: 195px;
@@ -206,12 +174,12 @@ img {
       font-size: 2.25rem;
       text-transform: uppercase;
       font-weight: 400;
-      line-height: 1.8;
+      line-height: $lineHeiSec;
       margin-bottom: 45px;
     }
     &__text {
-      font-size: 1rem;
-      line-height: 1.8;
+      font-size: $fZidePrim;
+      line-height: $lineHeiSec;
       font-weight: 300;
       letter-spacing: 1px;
       margin-bottom: 25px;
@@ -220,27 +188,13 @@ img {
       }
     }
     &__link {
-      display: inline-block;
-      position: relative;
-      overflow: hidden;
-      font-family: $fontAleo;
-      font-size: 1rem;
-      text-transform: uppercase;
+      @include link;
       padding: 20px 38px;
-      background-color: #496bfe;
       margin-top: 45px;
+
       &::before,
       &::after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(112, 68, 255, 0.4);
-        top: 0;
-        left: -100%;
-        position: absolute;
-        transition: .3s;
-        z-index: 10;
+        @include hoverBtn;
       }
       &:hover::before {
         left: 0;
@@ -274,102 +228,51 @@ img {
     color: #333333;
   }
   .ba-search {
-    display: flex;
-    justify-content: center;
-    position: relative;
+    @include placeWrapp;
+
     &::after {
-      position: absolute;
+      @include afterPlace;
       content: url(../images/search.png);
-      bottom: 100%;
-      left: 50%;
-      margin-bottom: 15px;
-      transform: translateX(-50%);
     }
   }
   .ba-arrow {
-    display: flex;
-    justify-content: center;
-    position: relative;
+    @include placeWrapp;
+
     &::after {
-      position: absolute;
+      @include afterPlace;
       content: url(../images/arrow.png);
-      bottom: 100%;
-      left: 50%;
-      margin-bottom: 15px;
-      transform: translateX(-50%);
     }
   }
   .ba-like {
-    position: relative;
-    display: flex;
-    justify-content: center;
+    @include placeWrapp;
+
     &::after {
-      position: absolute;
+      @include afterPlace;
       content: url(../images/like.png);
-      bottom: 100%;
-      left: 50%;
-      margin-bottom: 15px;
-      transform: translateX(-50%);
     }
   }
 }
 // ba card-one
 .ba-card-one {
-  padding: 217px 0 100px;
-  background: {
-    color: #333333;
-    image: url(../images/card-bg1.jpg);
-    size: cover;
-  }
+  @include card;
+  background-image: url(../images/card-bg1.jpg);
+   
   .ba-info-box {
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    max-width: 451px;
-    padding: 42px 32px 50px;
-    margin-left: 40px;
+    @include box;
     &__name {
-      display: inline-block;
-      font-size: 1.25rem;
-      letter-spacing: .75px;
-      font-weight: 300;
-      line-height: 1.5;
-      margin-bottom: 20px;
+    @include sectName;
     }
     &__title {
-      font-size: 1.25rem;
-      text-transform: uppercase;
-      font-weight: 300;
-      line-height: 1.5;
-      margin-bottom: 20px;
+      @include title;
     }
     &__text {
-      font-size: 1rem;
-      line-height: 1.5;
-      font-weight: 300;
-      margin-bottom: 43px;
+      @include text;
     }
     &__link {
-      display: inline-block;
-      position: relative;
-      font-family: $fontAleo;
-      overflow: hidden;
-      text-transform: uppercase;
-      font-size: 1rem;
-      line-height: 1.5;
-      background-color: #496bfe;
-      padding: 20px 63px;
+      @include link;
       &::before,
       &::after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(112, 68, 255, 0.4);
-        top: 0;
-        left: -100%;
-        position: absolute;
-        transition: .3s;
-        z-index: 10;
+       @include hoverBtn;
       }
       &:hover::before {
         left: 0;
@@ -388,64 +291,27 @@ img {
 }
 // start ba-card-two
 .ba-card-two {
-  padding: 217px 0 100px;
-  background: {
-  color:#333;
-  image: url(../images/card-bg2.jpg);
-  size: cover;
-  }
+  @include card;
+  background-image: url(../images/card-bg2.jpg);
   .ba-card-wrapp {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 100px;
+    @include flex;
+
     .ba-info-box {
-      background-color: rgba(0, 0, 0, 0.7);
-      width: 100%;
-      max-width: 451px;
-      padding: 42px 32px 50px;
+      @include box;
       &__name {
-        display: inline-block;
-        font-size: 1.25rem;
-        letter-spacing: .75px;
-        font-weight: 300;
-        line-height: 1.5;
-        margin-bottom: 20px;
+        @include sectName;
       }
       &__title {
-        font-size: 1.25rem;
-        text-transform: uppercase;
-        font-weight: 300;
-        line-height: 1.5;
-        margin-bottom: 20px;
+        @include title;
       }
       &__text {
-        font-size: 1rem;
-        line-height: 1.5;
-        font-weight: 300;
-        margin-bottom: 43px;
+        @include text;
       }
       &__link {
-        position: relative;
-        overflow: hidden;
-        display: inline-block;
-        font-family: $fontAleo;
-        text-transform: uppercase;
-        font-size: 1rem;
-        line-height: 1.5;
-        background-color: #496bfe;
-        padding: 20px 63px;
+        @include link;
          &::before,
         &::after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(112, 68, 255, 0.4);
-        top: 0;
-        left: -100%;
-        position: absolute;
-        transition: .3s;
-        z-index: 10;
+        @include hoverBtn;
       }
       &:hover::before {
         left: 0;
@@ -469,7 +335,7 @@ img {
   background: {
     color: #333333;
     image: url(../images/desc-bg.jpg);
-    size: cover;
+    size: $cov;
   }
   .ba-description-wrapp {
     display: flex;
@@ -490,18 +356,15 @@ img {
       width: 100%;
       max-width: 665px;
       &__title {
-        font-size: 1.25rem;
-        text-transform: uppercase;
-        font-weight: 300;
+        @include title;
         margin-bottom: 35px;
       }
       &__quote {
-        position: relative;
-        font-size: 1rem;
-        line-height: 1.5;
+        font-size: $fZidePrim;
+        line-height: $lineHeiPrim;
         font-weight: 300;
         .fa {
-          color: #496bfe;
+          color: $secondaryColor;
           margin-right: 7px;
           font-size: 1.3rem;
         }
@@ -524,13 +387,13 @@ img {
         text-transform: uppercase;
         font-size: 1.5rem;
         letter-spacing: 3px;
-        line-height: 1.5;
+        line-height: $lineHeiPrim;
         margin-bottom: 8px;
         text-align: center;
       }
       &__text {
-        font-size: 1rem;
-        line-height: 1.5;
+        font-size: $fZidePrim;
+        line-height: $lineHeiPrim;
         letter-spacing: .7px;
         font-weight: 300;
       }
@@ -542,7 +405,7 @@ img {
           .fa {
             transition: .4s;
             &:hover{
-            color: blue;
+              color: $secondaryColor;
             }
           }
         }
