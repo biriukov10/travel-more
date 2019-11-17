@@ -91,7 +91,7 @@ img {
 .ba-banner {
   height: 100vh;
   background-color: #393d3f;
-  background-image: url(../../images/Image.jpg);
+  background-image: url(../images/Image.jpg);
   background-size: cover; }
   .ba-banner .ba-hero {
     height: calc(100vh - 80px);
@@ -162,7 +162,7 @@ img {
           right: 10%;
           width: 20px; }
         .ba-banner .ba-hero .ba-search-form .ba-button::after {
-          content: url(../../images/search.svg);
+          content: url(../images/search.svg);
           position: absolute;
           top: 12%;
           right: 5px; }
@@ -194,7 +194,7 @@ img {
       line-height: 1.5; }
       .ba-banner .ba-hero .ba-scroll::after {
         position: absolute;
-        content: url(../../images/scroll.svg);
+        content: url(../images/scroll.svg);
         display: block;
         left: 50%;
         transform: translateX(-50%); }
@@ -226,7 +226,7 @@ img {
 .ba-info {
   padding-bottom: 10vh;
   background-color: #333333;
-  background-image: url(../../images/info.jpg);
+  background-image: url(../images/info.jpg);
   background-size: cover; }
   .ba-info .ba-info-desc {
     padding-top: 195px; }
@@ -293,7 +293,7 @@ img {
     position: relative; }
     .ba-place .ba-search::after {
       position: absolute;
-      content: url(../../images/search.png);
+      content: url(../images/search.png);
       bottom: 100%;
       left: 50%;
       margin-bottom: 15px;
@@ -304,7 +304,7 @@ img {
     position: relative; }
     .ba-place .ba-arrow::after {
       position: absolute;
-      content: url(../../images/arrow.png);
+      content: url(../images/arrow.png);
       bottom: 100%;
       left: 50%;
       margin-bottom: 15px;
@@ -315,7 +315,7 @@ img {
     justify-content: center; }
     .ba-place .ba-like::after {
       position: absolute;
-      content: url(../../images/like.png);
+      content: url(../images/like.png);
       bottom: 100%;
       left: 50%;
       margin-bottom: 15px;
@@ -324,7 +324,7 @@ img {
 .ba-card-one {
   padding: 217px 0 100px;
   background-color: #333333;
-  background-image: url(../../images/card-bg1.jpg);
+  background-image: url(../images/card-bg1.jpg);
   background-size: cover; }
   .ba-card-one .ba-info-box {
     background-color: rgba(0, 0, 0, 0.7);
@@ -384,7 +384,7 @@ img {
 .ba-card-two {
   padding: 217px 0 100px;
   background-color: #333;
-  background-image: url(../../images/card-bg2.jpg);
+  background-image: url(../images/card-bg2.jpg);
   background-size: cover; }
   .ba-card-two .ba-card-wrapp {
     display: flex;
@@ -447,7 +447,7 @@ img {
 .ba-description {
   padding: 100px 0 200px;
   background-color: #333333;
-  background-image: url(../../images/desc-bg.jpg);
+  background-image: url(../images/desc-bg.jpg);
   background-size: cover; }
   .ba-description .ba-description-wrapp {
     display: flex;

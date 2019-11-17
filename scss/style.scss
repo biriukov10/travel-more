@@ -29,7 +29,7 @@ img {
   height: 100vh;
   background: {
     color: #393d3f;
-    image: url(../../images/Image.jpg);
+    image: url(../images/Image.jpg);
     size: cover;
   } 
   .ba-hero {
@@ -109,7 +109,7 @@ img {
           width: 20px;
         }
         &::after {
-          content: url(../../images/search.svg);
+          content: url(../images/search.svg);
           position: absolute;
           top: 12%;
           right: 5px;
@@ -149,7 +149,7 @@ img {
       line-height: 1.5;
       &::after {
         position: absolute;
-        content: url(../../images/scroll.svg);
+        content: url(../images/scroll.svg);
         display: block;
         left: 50%;
         transform: translateX(-50%);
@@ -196,7 +196,7 @@ img {
   padding-bottom: 10vh;
   background:  {
     color: #333333;
-    image: url(../../images/info.jpg);
+    image: url(../images/info.jpg);
     size: cover;
   }
   .ba-info-desc {
@@ -279,7 +279,7 @@ img {
     position: relative;
     &::after {
       position: absolute;
-      content: url(../../images/search.png);
+      content: url(../images/search.png);
       bottom: 100%;
       left: 50%;
       margin-bottom: 15px;
@@ -292,7 +292,7 @@ img {
     position: relative;
     &::after {
       position: absolute;
-      content: url(../../images/arrow.png);
+      content: url(../images/arrow.png);
       bottom: 100%;
       left: 50%;
       margin-bottom: 15px;
@@ -305,7 +305,7 @@ img {
     justify-content: center;
     &::after {
       position: absolute;
-      content: url(../../images/like.png);
+      content: url(../images/like.png);
       bottom: 100%;
       left: 50%;
       margin-bottom: 15px;
@@ -318,7 +318,7 @@ img {
   padding: 217px 0 100px;
   background: {
     color: #333333;
-    image: url(../../images/card-bg1.jpg);
+    image: url(../images/card-bg1.jpg);
     size: cover;
   }
   .ba-info-box {
@@ -391,7 +391,7 @@ img {
   padding: 217px 0 100px;
   background: {
   color:#333;
-  image: url(../../images/card-bg2.jpg);
+  image: url(../images/card-bg2.jpg);
   size: cover;
   }
   .ba-card-wrapp {
@@ -468,7 +468,7 @@ img {
   padding: 100px 0 200px;
   background: {
     color: #333333;
-    image: url(../../images/desc-bg.jpg);
+    image: url(../images/desc-bg.jpg);
     size: cover;
   }
   .ba-description-wrapp {
