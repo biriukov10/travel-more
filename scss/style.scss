@@ -86,26 +86,19 @@ img {
           width: 20px;
         }
         &::after {
-          content: url(../images/search.svg);
-          position: absolute;
-          top: 12%;
-          right: 5px;
-        }
-        &::before,
-        &::after {
          @include hoverBtn;
+        }
+        &::before{
+         @include boverBtnBef;
         }
         &:hover::before {
           left: 0;
+          width: 50%;
         }
-        &::after {
-          background: rgba(58, 39, 119, 0.4);
-          top: 100%;
-          left: 0;
-        }
+        
         &:hover::after {
-          top: 0;
-          transition-delay: .2s;
+          right: 0;
+          width: 55%;
         }
       }
     }
@@ -192,21 +185,21 @@ img {
       padding: 20px 38px;
       margin-top: 45px;
 
-      &::before,
       &::after {
         @include hoverBtn;
       }
+      &::before{
+        @include boverBtnBef;
+      }
+      
       &:hover::before {
-        left: 0;
-      }
-      &::after {
-        background: rgba(58, 39, 119, 0.4);
-        top: 100%;
-        left: 0;
-      }
+          left: 0;
+          width: 50%;
+        }
+        
       &:hover::after {
-        top: 0;
-        transition-delay: .2s;
+        right: 0;
+        width: 55%;
       }
     }
   }
@@ -270,21 +263,22 @@ img {
     }
     &__link {
       @include link;
-      &::before,
+      
       &::after {
-       @include hoverBtn;
+        @include hoverBtn;
       }
+      &::before{
+        @include boverBtnBef;
+      }
+      
       &:hover::before {
-        left: 0;
-      }
-      &::after {
-        background: rgba(58, 39, 119, 0.4);
-        top: 100%;
-        left: 0;
-      }
+          left: 0;
+          width: 50%;
+        }
+        
       &:hover::after {
-        top: 0;
-        transition-delay: .2s;
+        right: 0;
+        width: 55%;
       }
     }
   }
@@ -309,21 +303,22 @@ img {
       }
       &__link {
         @include link;
-         &::before,
+        
         &::after {
         @include hoverBtn;
       }
+      &::before{
+        @include boverBtnBef;
+      }
+      
       &:hover::before {
-        left: 0;
-      }
-      &::after {
-        background: rgba(58, 39, 119, 0.4);
-        top: 100%;
-        left: 0;
-      }
+          left: 0;
+          width: 50%;
+        }
+        
       &:hover::after {
-        top: 0;
-        transition-delay: .2s;
+        right: 0;
+        width: 55%;
       }
       }
     }
